@@ -1,0 +1,23 @@
+services:
+  personaplex:
+    build:
+      context: ./personaplex
+      dockerfile: Dockerfile
+    ports:
+      - "8998:8998"
+    env_file:
+      - .env
+    environment:
+      - NO_TORCH_COMPILE=1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    volumes:
+      # モデルキャッシュを永続化（初回ダウンロード後は再利用）
+      - ./cache:/root/.cache
+      # SSL証明書
+      - ./ssl:/app/ssl

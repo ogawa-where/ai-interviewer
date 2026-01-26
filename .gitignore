@@ -1,0 +1,11 @@
+# CLAUDE.md
+CLAUDE.md
+
+# 環境変数
+.env
+
+# キャッシュ（モデルファイル）
+cache/
+
+# SSL証明書
+ssl/
