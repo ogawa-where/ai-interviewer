@@ -1,4 +1,4 @@
-# AI Interviewer（開発中）
+# AI Interviewer（開発中...）
 
 NVIDIA PersonaPlex-7B-v1を活用したAI面接官システム
 
