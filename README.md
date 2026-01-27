@@ -42,3 +42,5 @@ https://localhost:8998
 ## ライセンス
 
 PersonaPlex-7B-v1: NVIDIA Open Model License
+
+# YOLOラベル取得したいのでPR作って，即マージします．
